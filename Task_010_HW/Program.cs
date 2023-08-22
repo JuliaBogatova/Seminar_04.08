@@ -10,7 +10,7 @@
 Console.Write("Введите трехзначное число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
-// if (number < 0) number *= -1;
+if (number < 0) number *= -1;
 
 if (number < 100 || number > 999)
 {
@@ -19,7 +19,7 @@ if (number < 100 || number > 999)
 }
 
 int showSecondDigit = ShowSecondDigit(number);
-Console.WriteLine($"Вторая цифра числа {number} -> {showSecondDigit}");
+Console.WriteLine($"Вторая цифра -> {showSecondDigit}");
 
 int ShowSecondDigit(int num)
 {
